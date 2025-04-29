@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333333;
+}
+
+.section-title2 {
+	font-family: var(--font-accent);
+	font-weight: 700;
+	color: var(--accent);
+	/* font-size: 96px; */
+	font-size: clamp(1rem, 1rem + 3.45vw, 3rem); /* 96px - 48px */
+	letter-spacing: 0.08em;
+}
+
+.section-title12 {
+	font-family: var(--font-accent);
+	font-weight: 700;
+  text-align: center;
+	color: var(--accent);
+	/* font-size: 96px; */
+	font-size: clamp(1rem, 1rem + 3.45vw, 3rem); /* 96px - 48px */
+	letter-spacing: 0.08em;
+	margin-top: 50px;
+}
+
+
+.health-info {
+  padding: 60px;
+  text-align: center;
+}
+
+
+.info-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-padding: 10px;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.info-card {
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.info-card h2 {
+  color: #eaff00;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.dasa {
+  color: #000000;
+}
+
+
+.container2 {
+  max-width: 1220px;      /* Ограничиваем ширину контейнера */
+  margin: 0 auto;       /* Центруем по центру страницы */
+  padding: 20px;        /* Внутреннее расстояние от краев */
+  background-color: #fff; /* Белый фон */
+  border-radius: 10px;  /* Округлые углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Нативные настройки для заголовка и параграфа */
+.container2 h1 {
+  font-size: 2.5rem;     /* Большой шрифт для заголовка */
+  margin-bottom: 20px;   /* Расстояние под заголовком */
+	color: rgb(225, 255, 0);
+	text-shadow: 2px 2px 4px #717122;
+	font-family: cursive;
+}
+
+.container2 p {
+  font-size: 1.1rem;     /* Чуть увеличенный шрифт абзаца */
+  line-height: 1.6;      /* Межстрочный интервал */
+  text-align: justify;   /* Выравнивание текста по ширине */
+}
+
+
+
+/* Mobile Devices (small screens) */
+@media (max-width: 768px) {
+  .info-card {
+      width: 100%; /* Card takes full width on small screens */
+  }
+  .container2 {
+    padding: 15px;     /* Уменьшаем внутренние отступы */
+}
+.container2 h1 {
+  font-size: 2rem;   /* Уменьшаем размер заголовка */
+}
+.container2 p {
+  font-size: 1rem;   /* Стандартный размер шрифта */
+}
+
+  .info-wrapper {
+      flex-direction: column;
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
+}
+
+
+/* Tablets and medium-sized screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .info-card {
+      width: 300px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+  .info-card {
+      width: 250px;
+  }
+}
+@media (min-width: 2000px) {
+  .dasa {
+      font-size: 30px;
+  }
+}
+@media (min-width: 605px) {
+  .dasa {
+      font-size: 18px;
+  }
+}
+
+.go-top2 {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.go-top2 a {
+  width: 4rem;
+  height: 4rem;
+  background: orange;
+  text-align: center;
+  display: block;
+  line-height: 4rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+
+
+

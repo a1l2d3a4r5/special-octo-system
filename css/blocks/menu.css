@@ -1,0 +1,82 @@
+main .hero {
+  padding: 100px 0;
+  text-align: center;
+}
+
+main .hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+	margin: 40px 0 40px;
+	font-size: 40px;
+	color: rgb(225, 255, 0);
+	text-shadow: 2px 2px 4px #717122;
+	font-family: cursive;
+}
+
+
+.q1 {
+  text-align: center;
+	margin: 40px 0 40px;
+	font-size: 17px;
+	color: rgb(0, 0, 0);
+	text-shadow: 2px 2px 4px #ffffff;
+	font-family: cursive;
+}
+
+.q5 {
+  text-align: center;
+	margin: 40px 0 40px;
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 4px #00f7ff;
+	font-family: cursive;
+}
+
+main .hero p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-bottom: 90px;
+  margin: 40px 0 40px;
+	font-size: 22px;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 4px #000000;
+	font-family: cursive;
+}
+
+main .hero .buttonn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main .hero .buttonn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  margin-top: 10px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media only screen and (max-width: 768px) {
+  
+  main .hero {
+      padding: 50px 0;
+  }
+
+  main .hero h1 {
+      font-size: 28px;
+  }
+
+  main .hero p {
+      font-size: 16px;
+  }
+}
